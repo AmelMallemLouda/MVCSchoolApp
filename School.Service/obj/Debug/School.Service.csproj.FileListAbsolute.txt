@@ -1,0 +1,16 @@
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\School.Service.dll.config
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\School.Service.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\School.Service.pdb
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\EntityFramework.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\EntityFramework.xml
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\obj\Debug\School.Service.csprojAssemblyReference.cache
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\obj\Debug\School.Service.csproj.CoreCompileInputs.cache
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\obj\Debug\School.Service.csproj.CopyComplete
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\obj\Debug\School.Service.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Service\obj\Debug\School.Service.pdb
