@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using School.Models.ClassRoomModel;
 using School.Service;
+using ShoolApp.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace ShoolApp.Controllers
 {
     public class ClassRoomController : Controller
     {
+
+        ApplicationDbContext _db = new ApplicationDbContext();
         // GET: ClassRoom
         public ClassRoomService CreateClassRoomService()
         {
@@ -43,7 +46,11 @@ namespace ShoolApp.Controllers
         public ActionResult Create()
         {
 
-
+            ViewData["Schools"] = _db.Schools.Select(e => new SelectListItem
+            {
+                Text = e.SchoolName,
+                Value = e.SchoolId.ToString()
+            }); ;
 
             return View();
         }
@@ -63,10 +70,10 @@ namespace ShoolApp.Controllers
 
             if (svc.CreateClassRoom(model))
             {
-                TempData["SaveResult"] = "Your Review was created.";
-                return RedirectToAction("Index", "Product"); //returns the user back to the index view
+                TempData["SaveResult"] = "Your Classroom was created.";
+                return RedirectToAction("Index"); //returns the user back to the index view
             };
-            ModelState.AddModelError("", "review could not be created.");//?
+            ModelState.AddModelError("", "Classroom could not be created.");//?
 
             return View(model);
 
@@ -78,16 +85,22 @@ namespace ShoolApp.Controllers
         {
             var svc = CreateClassRoomService();
             var detail = svc.GetClassRoomById(id);
+
+            ViewData["Schools"] = _db.Schools.Select(e => new SelectListItem
+            {
+                Text = e.SchoolName,
+                Value = e.SchoolId.ToString()
+            }); ;
             var model =
                 new ClassRoomEdit
                 {
-                    ClassRoomId=detail.ClassRoomId,
-                    ClassRomName=detail.ClassRomName,
+                    ClassRoomId = detail.ClassRoomId,
+                    ClassRomName = detail.ClassRomName,
 
 
                 };
 
-           
+
 
             return View(model);
         }
@@ -107,12 +120,12 @@ namespace ShoolApp.Controllers
             var svc = CreateClassRoomService();
             if ( svc.UpdateClassRoom(model))
             {
-                TempData["SaveResult"] = "Review was successfully updated.";
+                TempData["SaveResult"] = "Classroom was successfully updated.";
                 return RedirectToAction("Index");
             }
            
 
-            ModelState.AddModelError("", "Menu could not be updated.");
+            ModelState.AddModelError("", "Classroom could not be updated.");
             return View(model);
         }
         [HttpGet]
@@ -130,7 +143,7 @@ namespace ShoolApp.Controllers
         {
             var svc = CreateClassRoomService();
             svc.DeleteClassRoom(id);
-            TempData["SaveResult"] = "Your review was successfully deleted.";
+            TempData["SaveResult"] = "Your Classroom was successfully deleted.";
 
             return RedirectToAction("Index");
         }

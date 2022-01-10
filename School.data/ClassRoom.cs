@@ -11,10 +11,18 @@ namespace School.data
     {
 
         [Key]
+        [Display(Name ="Classroom Id")]
         public int ClassRoomId { get; set; }
         [Required]
+        [Display(Name = "Classroom Name")]
         public string ClassRoomName { get; set; }
 
         public Guid OwnerID { get; set; }
+
+
+        [Required]
+        [Display(Name = "School Id")]
+        public int SchoolId { get; set; }
+        public virtual Schools Schls { get; set; }
     }
 }

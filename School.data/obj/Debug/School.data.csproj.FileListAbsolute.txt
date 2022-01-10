@@ -14,3 +14,6 @@ C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.cspr
 C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.csproj.CopyComplete
 C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.dll
 C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.pdb
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.Migrations.InitialCreate.resources
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.csproj.GenerateResource.cache
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.data\obj\Debug\School.data.Migrations.firstmigration.resources

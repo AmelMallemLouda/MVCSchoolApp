@@ -28,7 +28,8 @@ namespace School.Service
             ClassRoom classRoom1 = new ClassRoom()
             {
                 OwnerID = _UserId,//We want the user who creates the Classroom to be the user who is logged in
-                ClassRoomName = classRoom.ClassRomName
+                ClassRoomName = classRoom.ClassRomName,
+                SchoolId=classRoom.SchoolId
             };
 
             using (var ctx = new ApplicationDbContext())
@@ -67,7 +68,8 @@ namespace School.Service
                     new ClassRoomDetails
                     {
                         ClassRoomId = entity.ClassRoomId,
-                        ClassRomName = entity.ClassRoomName
+                        ClassRomName = entity.ClassRoomName,
+                        SchoolId=entity.SchoolId
                     };
             }
         }
@@ -81,6 +83,7 @@ namespace School.Service
                 var entity = 
                     ctx.ClassRooms.Single(e => e.ClassRoomId == classRoom.ClassRoomId);
                 entity.ClassRoomName = classRoom.ClassRomName;
+                entity.SchoolId = classRoom.SchoolId;
                 return ctx.SaveChanges() == 1;
             }
 

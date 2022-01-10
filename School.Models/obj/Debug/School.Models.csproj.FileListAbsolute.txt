@@ -14,3 +14,6 @@ C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\obj\Debug\School.Models.
 C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\obj\Debug\School.Models.csproj.CopyComplete
 C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\obj\Debug\School.Models.dll
 C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\obj\Debug\School.Models.pdb
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\bin\Debug\School.data.dll
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\bin\Debug\School.data.pdb
+C:\Users\Louda\source\repos\SchoolApp.MVC\School.Models\bin\Debug\School.data.dll.config

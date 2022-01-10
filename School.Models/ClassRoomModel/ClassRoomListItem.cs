@@ -1,4 +1,5 @@
-﻿using System;
+﻿using School.data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace School.Models.ClassRoomModel
         [Required]
         [Display(Name = "Classroom")]
         public string ClassRomName { get; set; }
+        [Display(Name = "School Id")]
+        public int SchoolId { get; set; }
+        public virtual Schools Schls { get; set; }
     }
 }
